@@ -65,15 +65,44 @@
 
     function permitirSoloLetras(){
         let soloLetras = document.getElementById("amigo");
+        let maxDeCaracteres = 30;
+        
         soloLetras.addEventListener("input",(e)=>{
-            e.target.value = e.target.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '');
+            let valorInicial = e.target.value;
+            let valorPermitido = valorInicial.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '');
+            
+            if (valorInicial != valorPermitido){
+                mensajeInsertar("p", "🆎¡Lo siento, solo se permite digitar letras");
+    
+            } else{
+                mensajeInsertar("p", "");
+        
+            }
+            e.target.value = valorPermitido;
+            
+            if (valorPermitido.length > maxDeCaracteres){
+                mensajeInsertar("span", "😔¡Lo siento, no se puede escribir mas de 30 caracteres!");
+    
+            } else{
+                mensajeInsertar("span", "");
+            }
+                
+                e.target.value = valorPermitido.substring(0,maxDeCaracteres);
         })
-
     }
+       
 
     permitirSoloLetras();
 
-
-
-
+    function mensajeInsertar(elemento, texto){
+        let mensajeAlerta = document.querySelector(elemento)
+        mensajeAlerta.innerHTML = texto;
+        return;
+        }
+    
+    
+        
+        
+    
+    
 
