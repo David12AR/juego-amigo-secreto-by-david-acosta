@@ -1,5 +1,6 @@
 :root {
     --color-primary: #4B69FD;
+    --color-primaryb: #3658FC;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
@@ -90,6 +91,9 @@ body {
 .button-container {
     width: 300px;
     justify-content: center;
+    max-width: 600px;
+    margin-top: 20px;
+    display: flex;
 }
 
 /* Estilos de entrada de texto */
@@ -161,3 +165,21 @@ ul {
     background-color: var(--color-button-hover);
 }
 
+
+.button-draw2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-size: 16px;
+}
+
+.button-draw2 img {
+    margin-right: 40px;
+}
+
+.button-draw2:hover {
+    background-color: var(--color-primaryb);
+}
