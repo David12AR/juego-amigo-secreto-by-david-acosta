@@ -1,11 +1,13 @@
 :root {
     --color-primary: #4B69FD;
-    --color-primaryb: #3658FC;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
     --color-text: #444444;
+    --color-buttonb: #7f94fc;
+    --color-button-hoverb: #6d84fa;
+    --color-black: #201F1F;
     --color-white: #FFFFFF;
 }
 
@@ -164,6 +166,9 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+.button-draw:disabled {
+    background: #898989;
+}
 
 
 .button-draw2 {
@@ -171,8 +176,8 @@ ul {
     align-items: center;
     width: 100%;
     padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-primary);
+    color: var(--color-black);
+    background-color: var(--color-buttonb);
     font-size: 16px;
 }
 
@@ -181,5 +186,9 @@ ul {
 }
 
 .button-draw2:hover {
-    background-color: var(--color-primaryb);
+    background-color: var(--color-button-hoverb);
+}
+
+.button-draw2:disabled {
+    background: #898989;
 }

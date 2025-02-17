@@ -1,6 +1,7 @@
     // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
     let listaAmigosArray = [];// Se crea el arreglo vacio.
     let listaHtml = 0; //Se declara variable de lista para los nombres de amigos.
+    let resultadoHTML = 0;
 
     //Se crea la función agregar amigo para que sea agregado al arreglo.
     function agregarAmigo(){
@@ -46,9 +47,14 @@
         let nombreGanador = listaAmigosArray[numeroAleatorio];//Se declara variable para indicar que en la lista se tendra en cuenta el numero aleatorio obtenido en el paso anterior que sera el indice del array.
         console.log(numeroAleatorio);
         console.log(nombreGanador);
-        let resultadoHTML = document.getElementById('resultado');//Se trae el elemento resultado que es de tipo lista <ul> el cual es asignado a la variable declarada.
+        resultadoHTML = document.getElementById('resultado');//Se trae el elemento resultado que es de tipo lista <ul> el cual es asignado a la variable declarada.
         resultadoHTML.innerHTML = `El amigo secreto ganador es ${nombreGanador}`;//Asignar mensaje con nombre ganador a la variable y esta lo asignara a su respectivo <ul> en HTML.
-        }
+        document.querySelector('#agregar').setAttribute('disabled', 'true');
+        document.getElementById('nuevo').removeAttribute('disabled');
+        document.getElementById("nuevo").style.cursor = ('pointer');
+        document.querySelector('#sorteo').setAttribute('disabled', 'true');
+        
+    }
         return;// Retorna el valor requerido
         }
 
@@ -105,7 +111,14 @@
         return;// Retorna el valor requerido
         }
     
-    
+    function nuevoJuego(){
+        resultadoHTML.innerHTML = "";
+        listaAmigosArray.length = 0;
+        limpiaLista();
+        document.querySelector('#nuevo').setAttribute('disabled', 'true');
+        document.getElementById('agregar').removeAttribute('disabled');
+        document.getElementById('sorteo').removeAttribute('disabled');
+        }
         
         
     
