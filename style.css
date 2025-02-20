@@ -130,6 +130,10 @@ button {
 .button-add:hover {
     background-color: #a1a1a1;
 }
+.button-add:disabled {
+    background: #898989;
+}
+
 
 /* Listas */
 ul {

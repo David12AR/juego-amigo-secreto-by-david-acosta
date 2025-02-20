@@ -5,6 +5,7 @@
 
     //Se crea la función agregar amigo para que sea agregado al arreglo.
     function agregarAmigo(){
+        limpiaLista();
         let amigoUsuario = document.getElementById('amigo').value;//Asignar el valor de la variable amigoUsuario a el input del html desde su ID.
         //Condicional para verificar si la caja de texto esta vacia.
         if (amigoUsuario == ""){
@@ -17,21 +18,21 @@
         
         return;// Retorna el valor requerido
     }
+    
 
     //Función para recorrer el arreglo e ir agregando a la lista de HTML los nombres.
     function recorrerArray(){
         listaHtml = document.getElementById('listaAmigos');// Asignar los valores a la lista de HTML <ul>, llamada por ID.
         limpiaLista();// Borrar los elementos de lista anteriores para que no se repitan.
-        
         //Bucle for each para recorrer el arreglo y mostrar su valor.
         listaAmigosArray.forEach(function(amigoUsuario){
-            console.log(amigoUsuario)
             let agregarAmigoLista =document.createElement('li');// Crear elemento de la lista en HTML y asignarla a la variable agregarAmigoLista.
             agregarAmigoLista.textContent = amigoUsuario;// Asignar el valor de la variable al <li> del HTML.
             listaHtml.appendChild(agregarAmigoLista);//Agregar los elementos de <li> a la lista <ul>.
         });
         return;// Retorna el valor requerido
     }
+    recorrerArray();
 
 //Función para sortear al azar los amigos ingresados.
     function sortearAmigo(){
@@ -42,16 +43,16 @@
         alert("Debe haber mas de 1 amigo para poder realizar el sorteo");
         }else{
         limpiaLista();// Llamar función para limpiar la lista y evitar repeticiones.
-        let valorMaximoArray = listaAmigosArray.length-1; // Se declara variable para tomar el tamaño de la lista.
-        let numeroAleatorio = Math.floor(Math.random()*valorMaximoArray)+1; // Se declara variable asignandole la función matematica para obtener un numero al azar y aproximarlo al entero mas cercano.
+        let valorMaximoArray = listaAmigosArray.length; // Se declara variable para tomar el tamaño de la lista.
+        let numeroAleatorio = Math.floor(Math.random()*valorMaximoArray); // Se declara variable asignandole la función matematica para obtener un numero al azar y aproximarlo al entero mas cercano.
         let nombreGanador = listaAmigosArray[numeroAleatorio];//Se declara variable para indicar que en la lista se tendra en cuenta el numero aleatorio obtenido en el paso anterior que sera el indice del array.
-        console.log(numeroAleatorio);
-        console.log(nombreGanador);
         resultadoHTML = document.getElementById('resultado');//Se trae el elemento resultado que es de tipo lista <ul> el cual es asignado a la variable declarada.
         resultadoHTML.innerHTML = `El amigo secreto ganador es ${nombreGanador}`;//Asignar mensaje con nombre ganador a la variable y esta lo asignara a su respectivo <ul> en HTML.
         document.querySelector('#agregar').setAttribute('disabled', 'true');
         document.getElementById('nuevo').removeAttribute('disabled');
         document.getElementById("nuevo").style.cursor = ('pointer');
+        document.getElementById("sorteo").style.cursor = ('default');
+        document.getElementById("agregar").style.cursor = ('default');
         document.querySelector('#sorteo').setAttribute('disabled', 'true');
         
     }
@@ -113,14 +114,19 @@
     
     function nuevoJuego(){
         resultadoHTML.innerHTML = "";
-        listaAmigosArray.length = 0;
-        console.log(listaAmigosArray)
         limpiaTextBox();
         limpiaLista();
+        listaAmigosArray = [];
         document.querySelector('#nuevo').setAttribute('disabled', 'true');
         document.getElementById('agregar').removeAttribute('disabled');
         document.getElementById('sorteo').removeAttribute('disabled');
+        document.getElementById("nuevo").style.cursor = ('default');
+        document.getElementById("agregar").style.cursor = ('pointer');
+        document.getElementById("sorteo").style.cursor = ('pointer');
+        return;
         }
+
+        
         
         
     
