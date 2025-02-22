@@ -51,13 +51,13 @@
         document.querySelector('#agregar').setAttribute('disabled', 'true');
         document.getElementById('nuevo').removeAttribute('disabled');
         document.getElementById("nuevo").style.cursor = ('pointer');
-        document.getElementById("sorteo").style.cursor = ('default');
         document.getElementById("agregar").style.cursor = ('default');
-        document.querySelector('#sorteo').setAttribute('disabled', 'true');
-        
-    }
+        console.log(numeroAleatorio)
+        }
+    
         return;// Retorna el valor requerido
         }
+    
 
     //Función para limpiar caja de texto donde ingresa nombres.
     function limpiaTextBox(){
