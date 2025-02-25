@@ -1,9 +1,29 @@
 <h1 align="center">Juego Amigo Secreto</h1>
-<div align="center"><img src="https://github.com/David12AR/juego-amigo-secreto-by-david-acosta/blob/main/assets/amigo-secreto.png?raw=true"></div>
+<div align="center"><img src="https://github.com/David12AR/juego-amigo-secreto-by-david-acosta/blob/main/assets/amigo-secreto.png?raw=true" width="500"></div>
+
+
+![Última actualización](https://img.shields.io/badge/%F0%9F%93%85%20Última%20Actualización-Febrero%202025-blue)  
+![Estado del Proyecto](https://img.shields.io/badge/%E2%9C%85%20Estado-Finalizado%20%7C%20Abierto%20a%20Mejoras-success)  
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)  
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26?style=flat&logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6?style=flat&logo=css3&logoColor=white)  
+![Contribuciones](https://img.shields.io/badge/%E2%9C%A8%20Contribuciones-Bienvenidas-informational)  
+
+
+## 📑 Índice
+
+1. [📌 Acerca del proyecto](#-acerca-del-proyecto)
+2. [✨ Funcionalidades](#-funcionalidades)
+3. [🚀 ¿Cómo funciona?](#-cómo-funciona)
+4. [🛠️ Tecnologías utilizadas](#-tecnologías-utilizadas)
+5. [👤 Autor](#-autor)
+
+
+## 📌 Acerca del proyecto
 
 Este proyecto, desarrollado con **JavaScript**, **HTML** y **CSS**, es una divertida herramienta para organizar un sorteo de *Amigo Secreto*. 
 
-**Proyecto finalizado, con opciones de mejora a futuro.**
+**🏁 Proyecto finalizado, con opciones de mejora y contribuciones. 🔧**
 
 ## ✨ Funcionalidades
 
@@ -20,6 +40,9 @@ Este proyecto, desarrollado con **JavaScript**, **HTML** y **CSS**, es una diver
 
 ## 🚀 ¿Cómo funciona?
 1. Agrega los nombres de los participantes en el campo de texto y haz clic en **"Añadir"**.
+
+<img src="https://github.com/David12AR/juego-amigo-secreto-by-david-acosta/blob/main/assets/interfaz_agregar_amigo_secreto.jpg?raw=true" width="500">
+
 2. Una vez que tengas al menos dos nombres, presiona el botón **"Sortear amigo"**.
 3. El sistema elegirá aleatoriamente un ganador y mostrará su nombre en un mensaje de color verde.
 4. Para empezar un nuevo sorteo, presiona el botón **"Nuevo juego"** y repite el proceso.
@@ -38,5 +61,7 @@ Este proyecto ha sido desarrollado utilizando las siguientes tecnologías:
 
 ## Autor
 
-| [<img src="assets/david linkedin.jpg" width=115><br><sub>David Acosta</sub>](https://github.com/David12AR) |
+| [<img src="assets/david_linkedin.jpg" width=115><br><sub>David Acosta</sub>](https://github.com/David12AR) |
 | :---: |
+
+| 💻 [GitHub](https://github.com/David12AR) • 🔗 [LinkedIn](https://linkedin.com/in/david-acosta01) |
