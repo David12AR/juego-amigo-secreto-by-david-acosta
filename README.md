@@ -64,7 +64,7 @@ Este proyecto ha sido desarrollado utilizando las siguientes tecnologías:
 - **JavaScript (ES6)** → Lógica del juego y manejo de interacciones dinámicas.
 
 
-## Autor
+## 👤 Autor
 
 | [<img src="assets/david_linkedin.jpg" width=115><br><sub>David Acosta</sub>](https://github.com/David12AR) |
 | :---: |
