@@ -41,11 +41,15 @@ Este proyecto, desarrollado con **JavaScript**, **HTML** y **CSS**, es una diver
 ## 🚀 ¿Cómo funciona?
 1. Agrega los nombres de los participantes en el campo de texto y haz clic en **"Añadir"**.
 
-<img src="https://github.com/David12AR/juego-amigo-secreto-by-david-acosta/blob/main/assets/interfaz_agregar_amigo_secreto.jpg?raw=true" width="500">
+<img src="https://github.com/David12AR/juego-amigo-secreto-by-david-acosta/blob/main/assets/interfaz_agregar_amigo_secreto.JPG?raw=true" width="500">
 
 2. Una vez que tengas al menos dos nombres, presiona el botón **"Sortear amigo"**.
 3. El sistema elegirá aleatoriamente un ganador y mostrará su nombre en un mensaje de color verde.
+
+<img src="https://github.com/David12AR/juego-amigo-secreto-by-david-acosta/blob/main/assets/interfaz_sortear_amigo_secreto.JPG?raw=true" width="500">
 4. Para empezar un nuevo sorteo, presiona el botón **"Nuevo juego"** y repite el proceso.
+
+<img src="https://github.com/David12AR/juego-amigo-secreto-by-david-acosta/blob/main/assets/interfaz_nuevo_amigo_secreto.JPG?raw=true" width="500">
 
 ¡Perfecto para reuniones, fiestas o cualquier ocasión especial! 🎁
 
