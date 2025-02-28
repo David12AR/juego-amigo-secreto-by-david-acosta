@@ -47,6 +47,7 @@ Este proyecto, desarrollado con **JavaScript**, **HTML** y **CSS**, es una diver
 3. El sistema elegirá aleatoriamente un ganador y mostrará su nombre en un mensaje de color verde.
 
 <img src="https://github.com/David12AR/juego-amigo-secreto-by-david-acosta/blob/main/assets/interfaz_sortear_amigo_secreto.JPG?raw=true" width="500">
+
 4. Para empezar un nuevo sorteo, presiona el botón **"Nuevo juego"** y repite el proceso.
 
 <img src="https://github.com/David12AR/juego-amigo-secreto-by-david-acosta/blob/main/assets/interfaz_nuevo_amigo_secreto.JPG?raw=true" width="500">
