@@ -15,7 +15,7 @@
 1. [📌 Acerca del proyecto](#-acerca-del-proyecto)
 2. [✨ Funcionalidades](#-funcionalidades)
 3. [🚀 ¿Cómo funciona?](#-cómo-funciona)
-4. [🛠️ Tecnologías utilizadas](#tecnologías-utilizadas)
+4. [🛠️ Tecnologías utilizadas](#-tecnologías-utilizadas)
 5. [👤 Autor](#-autor)
 
 
